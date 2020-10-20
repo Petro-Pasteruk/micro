@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no"/>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<title>Micro Art</title>
+	<link rel='stylesheet' id='sydney-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C600%7CRaleway%3A400%2C500%2C600' type='text/css' media='all' />
+	<link type="text/css" rel="stylesheet" href="css/styles.css">
+	<link type="text/css" rel="stylesheet" href="fonts/icon-font/css/icon-font.css">
+	<link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="preloader">
+	<div class="preloader__progress">
+		<img src="images/loader.gif" alt="">
+	</div>
+</div>
+
+
+<div class="wrapper">
+
+<header class="header">
+	<a class="header__btn-menu icon icon--menu js-toggle-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+	
+	<a class="header__btn-close icon icon--cancel js-modal-close">
+		<span></span>
+		<span></span>
+	</a>
+	<a class="psa-btn-close"><span></span><span></span></a>
+
+	
+</header>
+
+<nav class="menu">
+<div class="logo">
+	<img src="images/logo.png" />
+</div>
+	<ul>
+		<li><a href="#start">Welcome</a></li>
+		<li><a href="#about" data-modal="about">About us</a></li>
+		<li><a href="#attractions" data-modal="attractions">Attractions</a></li>
+		<li><a href="#team" data-modal="team">Articles</a></li>
+		<li><a href="#" id="link">Reserve</a></li>
+		<li><a href="#contact" data-modal="contact">Contacts</a></li>
+		<li><a href="#" class="final">Explore our Micro Art</a></li>
+	</ul>
+</nav>
+
+
+<canvas id="overlay" class="overlay"></canvas>
+<div id="about" class="modal">
+	<div class="modal__inner col--10of12-sm col--7of12-l text--center">
+		<h1>About Us</h1>
+		<p>Miniature art has been made for over 1000 years and is prized by collectors. Whether a portrait painted on the side of poppy seed or a caravan of camels marching through the eye of a needle, micro-miniature art grants us access to a tiny world full of massive possibilities. With roots dating back to the medieval times, collectors of these delicate works of art seek out the most skilled masters, who endeavor to create ever-smaller, evermore-detailed paintings, etchings and sculptures.</p>
+		<p>In recent years, there has been a revival of both the craft of making the Micro Masterpieces and the audiences seeking out their work. The U.S. White House, the Smithsonian American Art Museum, Astolat Dollhouse Castle, and museums around the world have collections of miniature paintings, drawings, original prints and etchings, and sculpture.</p>
+	</div>
+</div>
+
+<div id="team" class="modal">
+	<div class="page__row marginNone">
+		<div class="page__cell">
+			<div class="section5__headline">ARTICLES</div>
+		</div>
+		<div class="page__cell parentElement">
+			<div class="section__info-block1">
+					<div class="block1__left">
+						<img src="./images/HY16-MICROSCULPTURE.jpg" alt="MICROSCULPTURE">
+					</div>
+					<div class="block1__right">
+						<div class="block1__right-headline">The micro artist created his sculpture in the eye of a needle</div>
+						<div class="block1__right-text">"A small birthday gift to Modi from a big hearted Telangana micro artist.
+							The micro artist created his sculpture in the eye of a needle
+							Goldsmith and well-known micro artist Mattewada Ajay Kumar, a resident of Girmajipet here, has come up with a micro sculpture of Prime Minister Narendra Modi on the occasion of the latter’s 69th birthday on September 17.
+							Created in the eye of a needle of 0.69 mm size signifying the 69th birthday of Mr. Modi, the artist has used self-made wax to create the sculpture, which measures 0.92 mm in height and 0.28 in width.
+							“It took me 14 hours spread over six working days to create it,” Mr. Ajay "</div>
+						<div class="block1__right-link onceMore"><a href="https://www.thehindu.com/news/cities/Hyderabad/a-small-gift-to-modi-from-a-big-heart/article29434283.ece" target="_blank">more</a></div>
+					</div>
+		</div>
+			<div class="section__info-block2">
+				<div class="block21__left">
+					<img src="./images/Broadway.jpg" alt="Broadway">
+				</div>
+				<div class="block21__right">
+					<div class="block21__right-headline">Small is beautiful: Artist create micro-sculptures that sit INSIDE the eyes of needles</div>
+					<div class="block1__right-text">"You might struggle to see them, but these tiny artworks prove that small can be incredibly beautiful.
+						The microscopic creations were handcrafted by Willard Wigan, from Birmingham, and set within the eye of a needle.
+						The 57-year-old artist first became interested in micro-sculpture aged five when he began making houses for ants because he thought they needed somewhere to live.
+						Having been described by experts as 'the eighth wonder of the world', Wigan's works are so minute that they are only visible through a microscope.
+						Each piece sits within the eye of a needle, or on a pin-head, and is crafted between heartbeats, allowing the self-taught artist to reduce hand tremors.
+						The works are set to go on display in his home city, giving a cash boost to local literacy and learning initiatives."</div>
+					<div class="block21__right-link onceMore"><a href="https://www.dailymail.co.uk/news/article-2893671/Small-beautiful-Artist-create-micro-sculptures-sit-INSIDE-eyes-needles.html" target="_blank">more</a></div>
+				</div>
+			</div>
+			<div class="section__info-block3">
+				<div class="block21__left">
+					<img src="./images/Masterpieces.jpg" alt="Masterpieces">
+				</div>
+				<div class="block21__right">
+					<div class="block21__right-headline">World’s Tiniest Masterpieces: why artist Willard Wigan is a big name in micro-art</div>
+					<div class="block1__right-text">"You have little chance of seeing Willard Wigan’s greatest works, sculptures like his Golden Galleon, The Last Supper or Peregrine Falcon, unless, that is, you have access to a microscope or magnifying glass.
+						Wigan works at a very small scale. So small that, unaided, the human eye can barely detect his sculptures. The Last Supper and Peregrine Falcon are both mounted within the eye of needles, while Golden Galleon rests on the head of a pin. Wigan held the Guinness World Records title for the smallest work of art made by hand, a motorbike he sculpted inside a single fleck of male stubble.
+						“When I broke the record,” he says, as we meet in a Mayfair jewellers, where he is creating a watch with tiny artworks inside the mechanism, “I wanted to show that man had made it. I pulled an eyelash from the corner of my eye, made a paintbrush and painted it. No machine can do that.”"</div>
+					<div class="block22__right-link twoMore"><a href="https://www.radiotimes.com/news/tv/2018-07-08/worlds-tiniest-masterpieces-channel-4-willard-wigan-micro-art/" target="_blank">more</a></div>
+				</div>
+			</div>
+			<div class="section__info-blockWrap one">
+				<div class="section__info-block4">
+				<div class="block__left-img">
+					<img src="./images/micro-sculptures.jpg" alt="micro-sculptures ">
+				</div>
+				<div class="block__left-text bigPadd">
+					<div class="block21__right-headline">Einstein micro-sculpture goes on show at Broadway Art Museum and Gallery</div>
+					<div class="block1__right-text">"A new micro-sculpture of Albert Einstein, one of the most influential scientists of the 20th century, is going on display at Broadway Museum and Art Gallery as part of its Willard Wigan MBE exhibition.
+						The tiny micro-sculpture features Einstein standing in the eye of a needle, wearing a grey suit and leaning to one side with the other hand on his hip. The sculpture includes Einstein’s trademark long hair, moustache and glasses.
+						The glasses are made from 24 carat gold, a fragment from Willard’s own chain that he scraped off using a diamond chisel on a fine syringe."</div>
+					<div class="block21__right-link block5-link onceMore"><a href="https://www.cotswoldjournal.co.uk/news/18002979.einstein-micro-sculpture-goes-show-broadway-art-museum-gallery/" target="_blank">more</a></div>
+				</div>
+			</div>
+			</div>
+			<div class="section__info-blockWrap">
+				<div class="section__info-block5">
+				<div class="block__left-img">
+					<img src="./images/micro-sculptor-makes.jpg" alt="micro-sculptor-makes">
+				</div>
+				<div class="block__left-text">
+					<div class="block21__right-headline">Amazing Micro Sculptor Makes Tiny Dalmatian In The Eye Of A Needle</div>
+					<div class="block1__right-text">"A micro sculptor is blowing the minds of internet users everywhere by making a tiny Dalmatian so small it fits inside the eye of a needle.
+						David Alan Lindon, 51, gave up his career a few years ago to look after his mother, who had vascular dementia. In the years since, he has been able to develop his art skills to such an extent that he is now able to create a range of miniscule sculptures.
+						As well as the impressive Dalmatian, David has sculpted a tiny scarlet macaw perched on a branch, a red-eye tree frog hugging the tip of a pin, and a Grenadier Guard stood inside the eye of a needle."</div>
+					<div class="block21__right-link onceMore"><a href="https://www.unilad.co.uk/life/amazing-micro-sculptor-makes-tiny-dalmatian-in-the-eye-of-a-needle/" target="_blank">more</a></div>
+				</div>
+			</div>
+			</div>
+			<div class="section__info-block6">
+				<div class="block1__left">
+					<img src="./images/MicroWonderMuseume.png" alt="MicroWonderMuseume">
+				</div>
+				<div class="block1__right">
+					<div class="block1__right-headline block3-text">Micro Wonder Museume</div>
+					<div class="block1__right-text">"Tourists often travel abroad to see giant attractions like the Great Pyramids, the Taj Mahal, and the Eiffel Tower. But on a narrow street in Szentendre, Hungary, the most bizarre and perplexing attraction is unique for the exact opposite reason: for being incredibly small.
+						The Micro Wonder Museum, located just 30 minutes north of central Budapest, is a grand collection of miniature art so tiny you can only see it through the lens of a microscope. The miniatures fit an immense amount of detail into just about a millimeter of space, telling a story at a scale invisible to the naked eye."</div>
+					<div class="block1__right-link block3-link twoMore"><a href="https://www.atlasobscura.com/places/micro-wonder-museum" target="_blank">more</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="page__cell cell-tablet">
+			<div class="tablet section5__info">
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img1.webp" type="image/webp">
+							<img class="img" src="images/img1.jpg">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img2-tablet.webp" type="image/webp">
+							<img class="img" src="images/img2-tablet.png">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img3-tablet.webp" type="image/webp">
+							<img class="img" src="images/img3-tablet.png">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img4-tablet.webp" type="image/webp">
+							<img class="img" src="images/img4-tablet.png">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img5-tablet.webp" type="image/webp">
+							<img class="img" src="images/img5-tablet.png">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+				<div class="section__info-block">
+					<div class="block__img">
+						<picture>
+							<source class="img" srcset="images/img6-tablet.webp" type="image/webp">
+							<img class="img" src="images/img6-tablet.png">
+						</picture>
+					</div>
+					<div class="block__text">
+						<div class="block__text-headline">Article Name</div>
+						<div class="block__text-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit aliquam, feugiat nunc pellentesque, ullamcorper libero. </div>
+						<div class="block1__right-link"><a href="#" target="_blank">more</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="attractions" class="modal">
+	<div class="page__row section4">
+		<div class="page__cell">
+			<div class="section5__headline">attractions</div>
+			<div class="section4__card">
+				<div class="section4__card-item">
+					<div class="section4__card-item-img">
+						<picture>
+							<source class="img" srcset="images/torture.webp" type="image/webp">
+							<img class="img" src="images/torture.jpg">
+						</picture>
+					</div>
+					<div class="section4__card-item-headline card-color">medieval<br>torture museum</div>
+					<div class="section4__card-item-link"><a href="#">Learn More</a></div>
+				</div>
+				<div class="section4__card-item">
+					<div class="section4__card-item-img">
+						<picture>
+							<source class="img" srcset="images/illusion.webp" type="image/webp">
+							<img class="img" src="images/illusion.jpg">
+						</picture>
+					</div>
+					<div class="section4__card-item-headline card-color">MUSEUM<br>OF 3d ILLUSIONS</div>
+					<div class="section4__card-item-link"><a href="#">Learn More</a></div>
+				</div>
+			</div>
+			<figure class="icon-cards">
+				<div class="icon-cards__content">
+					<div class="section4__card-item icon-cards__item">
+						<div class="section4__card-item-img">
+							<picture>
+								<source class="img" srcset="images/micro.webp" type="image/webp">
+								<img class="img" src="images/micro.jpg">
+							</picture>
+						</div>
+						<div class="section4__card-item-headline card-weiht">micro<br>masterart</div>
+						<div class="section4__card-item-link"><a href="#">Learn More</a></div>
+					</div>
+					<div class="section4__card-item icon-cards__item">
+						<div class="section4__card-item-img">
+							<picture>
+								<source class="img" srcset="images/torture.webp" type="image/webp">
+								<img class="img" src="images/torture.jpg">
+							</picture>
+						</div>
+						<div class="section4__card-item-headline card-color">medieval<br>torture museum</div>
+						<div class="section4__card-item-link"><a href="#">Learn More</a></div>
+					</div>
+					<div class="section4__card-item icon-cards__item">
+						<div class="section4__card-item-img">
+							<picture>
+								<source class="img" srcset="images/illusion.webp" type="image/webp">
+								<img class="img" src="images/illusion.jpg">
+							</picture>
+						</div>
+						<div class="section4__card-item-headline card-color card-weiht">MUSEUM<br>OF 3d ILLUSIONS</div>
+						<div class="section4__card-item-link"><a href="#">Learn More</a></div>
+					</div>
+				</div>
+			</figure>
+		</div>
+	</div>
+</div>
+
+<div id="contact" class="modal">
+	<div class="modal__inner col--8of12-sm col--7of12-l text--center">
+	<h1>Contacts</h1>
+	<p class="larger">100 St. George St. 2nd Floor</p>
+	<div class="row row--sml margin-bottom--lge">
+	<div class="col col--3of12-sm">
+	<a href="tel:+19043737777">
+	<span class="icon icon--lge"><i class="fa fa-phone" aria-hidden="true"></i></span>
+	(904) 373-7777
+	</a>
+	</div>
+	<div class="col col--3of12-sm">
+	<a id="toggleMaps">
+	<span class="icon icon--lge"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+		100 St. George Street, St. Augustine, FL 32084
+	</a>
+	</div>
+	<div class="col col--3of12-sm">
+	<a href="https://www.facebook.com/micro.masterpieces.staugustine/" target="_blank">
+	<span class="icon icon--lge"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+	Follow us
+	</a>
+	</div>
+	<div class="col col--3of12-sm">
+	<a href="#">
+	<span class="icon icon--lge"><i class="fa fa-ticket" aria-hidden="true"></i></span>
+	Reserve
+	</a>
+	</div>
+	</div>
+	<div role="form" class="wpcf7" id="wpcf7-f79-o1" lang="en-US" dir="ltr">
+	<div class="screen-reader-response"></div>
+	</div>
+<!--		<iframe id="oneMap" src="https://maps.google.com/maps?q=100%20St.%20George%20St.%202nd%20Floor&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+		<iframe id="oneMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.9461479293295!2d-81.31547958492514!3d29.894652282588197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e42795ef01c2bd%3A0x8753e82fcf3752db!2zMTAwIFN0IEdlb3JnZSBTdCwgU3QuIEF1Z3VzdGluZSwgRkwgMzIwODQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1596536058499!5m2!1suk!2sua" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe id="twoMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.9461479293295!2d-81.31547958492514!3d29.894652282588197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e42795ef01c2bd%3A0x8753e82fcf3752db!2zMTAwIFN0IEdlb3JnZSBTdCwgU3QuIEF1Z3VzdGluZSwgRkwgMzIwODQsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1596536058499!5m2!1suk!2sua" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+</div>
+
+	<div id="final" class="modal">
+	    <div class="psa-topper">
+
+			<div class="reserveLink-wrap psa-topper__buy-wrap psa-topper__buy">
+<!--			<span class="reserveLink-container">-->
+<!--				<span></span>-->
+<!--				<span></span>-->
+<!--				<span></span>-->
+<!--				<span></span>-->
+				<a class="reserveLink" href="#"><img src="images/scene/reserve.png" alt=""></a>
+				<span class="reserveLink__subText">Reserve</span>
+<!--			</span>-->
+			</div>
+
+<!--			<div class="psa-topper__buy-wrap">-->
+<!--				 <button class="psa-topper__buy">-->
+<!--					 <img src="./images/scene/reserve.png" alt="">-->
+<!--				 </button>-->
+<!--				<button class="psa-topper__buy hover">-->
+<!--					 <img src="./images/scene/reserveHover.png" alt="">-->
+<!--				 </button>-->
+<!--			</div>-->
+
+	        <div class="modal__inner psa-miniature col--6of12-sm col--6of12-l text--center">
+	            <div class="xzoom-container">
+	              <img class="xzoom3" src="images/mini/micro.png" xoriginal="images/mini/micro.png">
+	            </div>
+	        </div>
+
+			<img src="./images/scene/hoverToZoom.png" alt="" class="img-hoverToZoom">
+	    </div>
+		<div class="mobile-advise">
+			<div><img src="images/advise.png" /> <span>Touch on object to zoom</span></div>
+		</div>
+	</div>
+    
+
+<!--	<div class="psa-clicker-top"></div>-->
+<!--	<div class="psa-clicker-left"></div>-->
+<!--	<div class="psa-clicker-right"></div>-->
+	xzoom3
+
+    <div class="scene">
+        <canvas id="scene-canvas" class="scene__canvas"></canvas>
+    </div>
+
+	<div class="reserveLink-wrap">
+<!--		<span class="reserveLink-container">-->
+<!--			<span></span>-->
+<!--			<span></span>-->
+<!--			<span></span>-->
+<!--			<span></span>-->
+		<a class="reserveLink" href="#"><img src="images/scene/reserve.png" alt=""></a>
+		<span class="reserveLink__subText">Reserve</span>
+<!--		</span>-->
+	</div>
+</div>
+<div class="depth"><div class="view-element"></div></div>
+
+    
+<div id="page" class="hfeed site">
+
+	<script src="js/libs/jquery-1.11.2.min.js"></script>
+	<script src="js/libs/modernizr.custom.js"></script>
+
+	<script src="js/libs/viewport-units-buggyfill.js"></script>
+	<script src="js/libs/underscore-min.js"></script>
+	<script src="js/libs/pubsub.js"></script>
+<!-- 	<script src="js/libs/jquery.flexslider.js"></script> -->
+	<script src="js/libs/jquery.scrollmagic.min.js"></script>
+	<script src="js/libs/jquery.scrollmagic.debug.js"></script>
+	<script src="js/libs/tweenmax.min.js"></script>
+	<script src="js/libs/tweenmax.ScrollToPlugin.min.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/preloader.js"></script>
+	<script src="js/overlay.js"></script>
+	<script src="js/page.js"></script>
+	<script src="js/modals.js"></script>
+	<script src="js/points.js?3434355"></script>
+	<script src="js/zoom.js?134444141"></script>
+<!-- 	<script src="js/contact.js"></script> -->
+	<script src="js/xzoom.min.js"></script>
+<!--	<script src="js/libs/hammer.min.js"></script>-->
+	
+<script>
+var $ = jQuery.noConflict();
+
+var keys = [37, 38, 39, 40];
+
+// function preventDefault(e) {
+//   e = e || window.event;
+//   if (e.preventDefault)
+//       e.preventDefault();
+//   e.returnValue = false;  
+// }
+
+function keydown(e) {
+    for (var i = keys.length; i--;) {
+        if (e.keyCode === keys[i]) {
+            preventDefault(e);
+            return;
+        }
+    }
+}
+
+function wheel(e) {
+  // preventDefault(e);
+}
+
+// отключить скролл
+function disable_scroll() {
+  if (window.addEventListener) {
+      window.addEventListener('DOMMouseScroll', wheel, false);
+  }
+  window.onmousewheel = document.onmousewheel = wheel;
+  document.onkeydown = keydown;
+}
+
+// включить скролл
+function enable_scroll() {
+    if (window.removeEventListener) {
+        window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+}
+    
+// плавное появление последнего экрана	
+function psaAnimation() {
+    $('.psa-topper').addClass('psa-anim');
+}
+    
+$('.header__btn-close').click(function() {
+      $('.psa-topper').removeClass('psa-anim');
+});
+
+    
+$(function () {
+	
+    var $win = $(window);
+	var body = $('body');
+	var clickCounter = 500;
+	
+	// клик в любое место = приближение
+	$('#scene-canvas').click(function() {
+		function scrollWhenClick () {
+			if (permissionClickAnywhere) {
+				clickCounter += clickCounter;
+				$('html,body').animate({
+							scrollTop: body.scrollTop()+clickCounter},
+						'slow');
+
+				if (document.documentElement.clientWidth < 640) {
+					setTimeout(resetCounter, 5);
+				} else {
+					setTimeout(resetCounter, 50);
+				}
+				
+				function resetCounter () {
+					if (clickCounter === 4000 || window.pageYOffset === 0) {
+						clickCounter = 500;
+					}
+				}
+			}
+		}
+
+		setTimeout(scrollWhenClick, 50);
+	});
+
+	// $('.psa-clicker-left').click(function() {
+	// 	clickCounter += clickCounter;
+	// 	$('html,body').animate({
+	// 		scrollTop: body.scrollTop()+clickCounter},
+	// 		'slow');
+	// 	if (clickCounter === 4000) {
+	// 		clickCounter = 500;
+	// 	}
+	// });
+	//
+	// $('.psa-clicker-right').click(function() {
+	// 	clickCounter += clickCounter;
+	// 	$('html,body').animate({
+	// 		scrollTop: body.scrollTop()+clickCounter},
+	// 		'slow');
+	// 	if (clickCounter === 4000) {
+	// 		clickCounter = 500;
+	// 	}
+	// });
+	//
+	//
+	// $('.psa-clicker-top').click(function() {
+	// 	clickCounter += clickCounter;
+	// 	$('html,body').animate({
+	// 		scrollTop: body.scrollTop()+clickCounter},
+	// 		'slow');
+	// 	if (clickCounter === 4000) {
+	// 		clickCounter = 500;
+	// 	}
+	// });
+	 	  
+ });
+    
+// увеличение миниатюры по наведению	
+(function ($) {
+    $(document).ready(function() {
+
+        $('.xzoom3').xzoom({
+		position: 'lens',
+		lensShape: 'circle',
+		bg: true,
+		sourceClass: 'xzoom-hidden',
+		fadeIn: true,
+		scroll: false,
+		adaptive:true
+		});
+
+        //Интеграция с hammer.js
+        var isTouchSupported = 'ontouchstart' in window;
+
+        if (false) {
+            //Если сенсорное устройство
+            $('.xzoom, .xzoom2, .xzoom3, .xzoom4, .xzoom5').each(function(){
+                var xzoom = $(this).data('xzoom');
+                xzoom.eventunbind();
+            });
+
+            // $('.xzoom, .xzoom2, .xzoom3').each(function() {
+            //     var xzoom = $(this).data('xzoom');
+            //     $(this).hammer().on("tap", function(event) {
+            //         event.pageX = event.gesture.center.pageX;
+            //         event.pageY = event.gesture.center.pageY;
+            //         var s = 1, ls;
+			//
+            //         xzoom.eventmove = function(element) {
+            //             element.hammer().on('drag', function(event) {
+            //                 event.pageX = event.gesture.center.pageX;
+            //                 event.pageY = event.gesture.center.pageY;
+            //                 xzoom.movezoom(event);
+            //                 event.gesture.preventDefault();
+            //             });
+            //         }
+			//
+            //         xzoom.eventleave = function(element) {
+            //             element.hammer().on('tap', function(event) {
+            //                 xzoom.closezoom();
+            //             });
+            //         }
+            //         xzoom.openzoom(event);
+            //     });
+            // });
+
+        $('.xzoom4').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openfancy,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openfancy() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        $.fancybox.open(xzoom.gallery().cgallery);
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+            xzoom.openzoom(event);
+            });
+        });
+
+        $('.xzoom5').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openmagnific,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openmagnific() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        var gallery = xzoom.gallery().cgallery;
+                        var i, images = new Array();
+                        for (i in gallery) {
+                            images[i] = {src: gallery[i]};
+                        }
+                        $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+                xzoom.openzoom(event);
+            });
+        });
+
+        } else {
+            //Если не сенсорное устройство
+
+            //Интеграция с плагином fancybox
+            $('#xzoom-fancy').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+                event.preventDefault();
+            });
+
+            //Интеграция с великолепным всплывающим плагином
+            $('#xzoom-magnific').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                var gallery = xzoom.gallery().cgallery;
+                var i, images = new Array();
+                for (i in gallery) {
+                    images[i] = {src: gallery[i]};
+                }
+                $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                event.preventDefault();
+            });
+        }
+    });
+})(jQuery);
+
+</script>
+
+<script type="text/javascript" src="js/jquery.visible.min.js"></script>
+
+<script>
+	// событие по появлению обьекта
+	var elem = $('.view-element');
+	var container = $('.depth');
+
+	$(document).ready(function(){
+
+		// ссылка на последний пункт меню (final)
+		$('.final').click(function() {
+			$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+			$('body').removeClass('menu-active');
+			$('#overlay').removeClass('overlay--active');
+			$('.modal').removeClass('modal--active modal--visible');
+			$('body').removeClass('modal-active');
+			$('.scene').removeClass('psa-blur');
+		});
+
+		$(window).scroll(function(){
+			var isVisible = typeof container !== 'undefined' && container !== null ? $(elem).visible(false, false, 'both', container) : $(elem).visible();
+			// var currentScrollWindow = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+			// var scrollHeight = Math.max(
+			// 		document.body.scrollHeight, document.documentElement.scrollHeight,
+			// 		document.body.offsetHeight, document.documentElement.offsetHeight,
+			// 		document.body.clientHeight, document.documentElement.clientHeight
+			// );
+
+			if(isVisible) {
+				disable_scroll();
+				$(".reserveBtn-wrap").addClass("noVisible");
+				$('#final').addClass('modal--active modal--visible');
+				$('body').addClass('modal-active');
+				$('.scene').addClass('psa-blur');
+				window.setTimeout('psaAnimation()',500);
+				// спрятать стандартный крестик
+				$('.js-modal-close').hide();
+				// показать новый крестик
+				//$('header.header').append('<a class="psa-btn-close"><span></span><span></span></a>');
+				$('.psa-btn-close').show();
+
+				// прячем элемент
+				elem.hide();
+
+			}
+		});
+
+		// при клике на последний новый крестик будет отдаление на начало
+		$('.psa-btn-close').click(function() {
+			$(".reserveBtn-wrap").removeClass("noVisible");
+			$('#final').removeClass('modal--active modal--visible');
+			$('body').removeClass('modal-active final-img');
+			$('.scene').removeClass('psa-blur');
+			$('.psa-topper').removeClass('psa-anim');
+			$("html, body").animate({ scrollTop: 0 }, 2000, function(){
+				enable_scroll();
+			});
+			$('.psa-btn-close').hide();
+			window.setTimeout(function(){
+				// показывем элемент
+				elem.show();
+			},1000);
+
+		});
+
+	});
+
+	const allBtnCloseModal = document.querySelectorAll(".js-modal-close");
+
+	allBtnCloseModal.forEach(item => {
+		item.addEventListener("click", function () {
+			$("html, body").animate({ scrollTop: 0 }, 2000);
+		});
+	});
+
+	const toggleMapsBtn = document.querySelector("#toggleMaps");
+	let toggleMapsBtnCounter = 0;
+
+	toggleMapsBtn.addEventListener("click", function (e) {
+		if (toggleMapsBtnCounter === 0) {
+			document.getElementById("oneMap").classList.add("no-active");
+			document.getElementById("twoMap").classList.add("active");
+			toggleMapsBtn.classList.add("active");
+			toggleMapsBtnCounter++;
+		} else {
+			document.getElementById("oneMap").classList.remove("no-active");
+			document.getElementById("twoMap").classList.remove("active");
+			toggleMapsBtn.classList.remove("active");
+			toggleMapsBtnCounter = 0;
+		}
+	});
+
+
+	// const finalModal = document.getElementById("final");
+	//
+	// finalModal.addEventListener("click", function () {
+	// 	console.log("Click");
+	// 	window.scrollTo(0, 0);
+	// });
+</script>
+
+
+</div><!-- #page -->
+</body>
+</html>
